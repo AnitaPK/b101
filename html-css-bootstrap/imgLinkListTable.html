@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning</title>
     <link rel="icon" href="./assets/smiley.jpeg">
 </head>
+
 <body>
+    <svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red" />
+</svg>
+
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+
+    <p>Price ₹ <del>2000 </del><span>&#8377;1000</span></p>
     <h1>IMAGE</h1>
     <pre>
         1. link in header 
@@ -16,12 +28,9 @@
         3. image as background 
         background-image = url("")
     </pre>
-        <img src="./assets/smiley.jpeg" alt="Smiley img is not showing" width="200" height="200">
-        <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" 
-              alt="nature image"
-            width="1200"
-            height="300"
-                  >
+    <img src="./assets/smiley.jpeg" alt="Smiley img is not showing" width="200" height="200">
+    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+        alt="nature image" width="1200" height="300">
     <h1>Link</h1>
     <pre>
         navigate from one page to another page 
@@ -31,11 +40,11 @@
         3. active
         4. visited
         </pre>
-        <a href="https://www.google.com/" target="_blank">Go to Google search</a>
-        <a href="https://wisdomsprouts.in/">Go to Wisdom Sprouts Website</a>
-        <a href="./myFavoriteTrip.html" target="">My favorite Trip</a>
+    <a href="https://www.google.com/" target="_blank">Go to Google search</a>
+    <a href="https://wisdomsprouts.in/">Go to Wisdom Sprouts Website</a>
+    <a href="./myFavoriteTrip.html" target="">My favorite Trip</a>
     <h1>Lists</h1>
-        <pre>
+    <pre>
            --- 1. UnOrdered List 
             2. Oredered List 
             3. Discriptive List
@@ -60,16 +69,19 @@
     </ol>
     <dl>
         <dt>HTML</dt>
-        <dd>HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages.</dd>
+        <dd>HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages.
+        </dd>
         <dt>CSS</dt>
-        <dd>CSS (Cascading Style Sheets) is the standard stylesheet language used to design, style, and lay out web pages written in HTML. While HTML provides the structural bones of a webpage, CSS brings it to life by controlling visual elements like colors, fonts, layouts, and animations</dd>
+        <dd>CSS (Cascading Style Sheets) is the standard stylesheet language used to design, style, and lay out web
+            pages written in HTML. While HTML provides the structural bones of a webpage, CSS brings it to life by
+            controlling visual elements like colors, fonts, layouts, and animations</dd>
     </dl>
 
     <h1>Table</h1>
     <table border="1" cellspacing="5">
         <thead>
             <tr>
-                <th >Roll Number</th>
+                <th>Roll Number</th>
                 <th colspan="2">Student's Name</th>
                 <!-- <th>Student Last Name</th> -->
                 <th>Contact Number</th>
@@ -96,7 +108,7 @@
                 <td>Salman</td>
                 <td>Khan</td>
                 <td>9876543212</td>
-                <td >salman@gmail.com</td>
+                <td>salman@gmail.com</td>
             </tr>
             <tr>
                 <td>003</td>
@@ -107,5 +119,25 @@
             </tr>
         </tbody>
     </table>
+<audio src=""></audio>
+<video src=""></video>
+
+<iframe src="./myFavoriteTrip.html" frameborder="0" width="500" height="300"></iframe>
+<iframe src="https://wisdomsprouts.in/" frameborder="0" width="700" height="500"></iframe>
+
+<br>
+<iframe width="860" height="415" 
+src="https://www.youtube.com/embed/q4txKRrSF_c?si=nmxgi3Kra64VxrfE" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242021.22046597584!2d73.64370949081346!3d18.592893880639156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0eed1beca7%3A0xf07ab6b613c2af51!2sSavitribai%20Phule%20Pune%20University!5e0!3m2!1sen!2sin!4v1788858076084!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+
+
+<footer>&copy; batch101</footer>
 </body>
+
 </html>
