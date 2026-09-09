@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Form </h1>
+    <form method="post">
+        <fieldset>
+            <legend>This is my first form</legend>
+        <label for="fName">Name : </label>
+        <input type="text" placeholder="Enter your name" id="fName" value="Tejas" name="name" readonly>
+        <br>
+        <label for="">Email : </label>
+        <input type="email" placeholder="john@gmail.com" name="emailInput" disabled>
+        <br>
+
+        <label for="password">Password <sup><font color="red">*</font></sup></label>
+        <input type="password" id="password" required>
+        <br>
+
+        <button>This is button</button>
+        <input type="submit" value="Register">
+        <input type="reset">
+
+        <label for="">Contact Number</label>
+        <input type="tel" name="" id="" autofocus>
+
+        <label for="">Number</label>
+        <input type="number" value="50" min="5" max="50" step="5">
+
+        <label for="">Select Range</label>
+        <input type="range" min="0" max="1000" value="500">
+
+        <label for="">Select color</label>
+        <input type="color" name="" id="" value="#76a53f">
+<br>
+        <label for="">Select Date of Joining</label>
+        <input type="date">
+<br>
+
+        <label for="">Enter Date of Birth with time</label>
+        <input type="datetime-local">
+        <label for="">Select Month </label>
+        <input type="month" name="" id="">
+<br>
+        <label for="">Upload File</label>
+        <input type="file" name="" id="">
+        </fieldset>
+    </form>
+</body>
+</html>
