@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+        }
         .descriWithName{
             /* border: 1px solid black; */
             width: 60%;
@@ -13,6 +21,7 @@
         h1{
             font-size: 3rem;
             text-shadow: 5px 5px 4px orange, 3px 3px 6px green;
+            margin:0
         }
         p{
             font-size: 1.5rem;
@@ -32,11 +41,42 @@
             font-size: 1.7rem;
             color: white;
             border-radius: 0px 15px 0px 15px;
+            padding: 10px 30px;
         }
         .btnMoreInfo:hover{
             background-color: #a36a00;
             border-radius: 15px 0 15px 0;
             cursor: pointer;
+        }
+        .projectDetails{
+            clear: right;
+        }
+        .boxModel{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            padding: 30px 20px 10px 5px;
+            border: 5px solid pink;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        #name{
+            padding: 5px;
+        }
+        #email{
+            padding: 5px;
+        }
+        #msg{
+            padding: 5px;
+        }
+        .inputClass{
+            padding: 5px;
+
+        }
+        #submitBTN{
+
         }
     </style>
 </head>
@@ -53,23 +93,47 @@
         <img src="./assets/userImg.png" alt="" class="imgUser">
      </div>
 </header>
-<hr>
+<br>
+<hr style="clear: left;">
+<div class="projectDetails">
 project details 
-title with decription 
+title with decription
+
+</div>
+ 
 
 <hr>
-
+<h2>
 About Me 
+</h2>
+
+<img src="./assets/userImg.png" alt="" width="300" height="300">
+<div class="boxModel"></div>
+
 
 skills ; technologies ; 
-<hr>
+<h2>TECHNOLOGIES</h2>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+    <li>PYTHON</li>
 
+</ul>
+<hr>
+<h2>
 Contact Me 
-form  
-name 
-email 
-meassage 
-button 
+
+</h2>
+<form action="">
+    <label for="">Name:</label>
+    <input type="text" name="" id="name" class="inputClass">
+     <label for="">Email:</label>
+    <input type="text" name="" id="email" class="inputClass">
+     <label for="">Message :</label>
+    <input type="text" name="" id="msg" class="inputClass">
+    <button id="submitBTN">Submit</button>
+</form>
 
 </body>
 </html>
