@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(205, 205, 205);
+        }
+        .nav{
+            height: 100px;
+            background-color: pink;
+        }
+        .header{
+            height: 150px;
+            background-color: yellow;
+        }
+        .mainContent{
+            display: flex;
+        }
+        .asideBar{
+            background-color: brown;
+            height: 70vh;
+            flex: 2;
+        }
+        .content{
+            height: 700px;
+            flex:7;
+            display: flex;
+        }
+        .borderBox{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
+        .containerOne{
+            order: 1;
+        }
+        .containerTwo{
+            order: 2;
+        }
+        .containerThree{
+            order: 3;
+        }
+        .containerFour{
+            order:4;
+        }
+        .footer{
+            background-color: black;
+            height: 20px;
+        }
+        @media screen and (max-width:600px){
+            .containerOne{
+                order: 3;
+            }
+            .containerTwo{
+                order: 4;
+            }
+            .containerThree{
+                order: 1;
+            }
+            .containerFour{
+                order: 2;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <main>
+        <section class="header"></section>
+        <div class="mainContent">
+        <aside class="asideBar"></aside>
+        <section class="content">
+            <div class="containerOne borderBox">11111</div>
+            <div class="containerTwo borderBox">2222</div>
+            <div class="containerThree borderBox">343434</div>
+            <div class="containerFour borderBox">43434343</div>
+        </section>
+        </div>
+    </main>
+    <div class="footer"></div>
+</body>
+</html>

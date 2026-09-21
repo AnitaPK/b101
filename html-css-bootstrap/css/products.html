@@ -10,6 +10,21 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            background-color: rgb(205, 205, 205);
+        }
+        .HeadingOne{
+            font-size: 60px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .productContainer{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+            justify-content: space-around;
+            /* align-items: center; */
+        }
         .card{
             width: 16rem;
             border: 1px solid gray;
@@ -50,9 +65,28 @@
         .btn:hover{
             background-color: rgb(88, 88, 88);
         }
+        @media screen and (max-width:750px) and (min-width: 351px) {
+            body{
+                background-color: yellow;
+            }
+            .HeadingOne{
+                font-size: 40px;
+            }
+        }
+
+        @media screen and (max-width:350px){
+            body{
+                background-color: rgb(255, 186, 196);
+            }
+            .HeadingOne{
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <h1 class="HeadingOne">Ecommerce Website</h1>
+    <div class="productContainer">
     <div class="card">
         <img src="./pensImg/pentonic.jpeg" alt="pentonic" class="imgCard">
         <h3 class="cardTitle">PENTONIC</h3>
@@ -91,6 +125,46 @@
             <button class="btn">Buy Now</button>
             <button class="btn">Add To Cart</button>
         </div>
+    </div>
+    <div class="card">
+        <img src="./pensImg/trimax.jpeg" alt="trimax" class="imgCard">
+        <h3 class="cardTitle">TRIMAX</h3>
+        <p class="cardDescri">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem asperiores sit porro possimus consectetur?</p>
+        <div class="PriceStock">
+            <span>Price : &#8377; 200</span>
+            <span class="badgeStock">In Stock</span>
+        </div>
+        <div class="btnGroup">
+            <button class="btn">Buy Now</button>
+            <button class="btn">Add To Cart</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./pensImg/trimax.jpeg" alt="trimax" class="imgCard">
+        <h3 class="cardTitle">TRIMAX</h3>
+        <p class="cardDescri">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem asperiores sit porro possimus consectetur?</p>
+        <div class="PriceStock">
+            <span>Price : &#8377; 200</span>
+            <span class="badgeStock">In Stock</span>
+        </div>
+        <div class="btnGroup">
+            <button class="btn">Buy Now</button>
+            <button class="btn">Add To Cart</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./pensImg/trimax.jpeg" alt="trimax" class="imgCard">
+        <h3 class="cardTitle">TRIMAX</h3>
+        <p class="cardDescri">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem asperiores sit porro possimus consectetur?</p>
+        <div class="PriceStock">
+            <span>Price : &#8377; 200</span>
+            <span class="badgeStock">In Stock</span>
+        </div>
+        <div class="btnGroup">
+            <button class="btn">Buy Now</button>
+            <button class="btn">Add To Cart</button>
+        </div>
+    </div>
     </div>
 </body>
 </html>
