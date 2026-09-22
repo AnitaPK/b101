@@ -1,0 +1,259 @@
+ *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+        }
+
+        nav{
+            height: 100px;
+            background-color: orange;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+        nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 28px;
+        }
+        .descriWithName{
+            /* border: 1px solid black; */
+            width: 60%;
+            float: left;
+        }
+        h1{
+            font-size: 3rem;
+            text-shadow: 5px 5px 4px orange, 3px 3px 6px green;
+            margin:0
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        .imgContainer{
+            width: 40%;
+            float: right;
+            text-align: center;
+        }
+        .imgUser{
+            width: 40%;
+        }
+        .btnMoreInfo{
+            background-color: orange;
+            border: none;
+            font-size: 1.7rem;
+            color: white;
+            border-radius: 0px 15px 0px 15px;
+            padding: 10px 30px;
+        }
+        .btnMoreInfo:hover{
+            background-color: #a36a00;
+            border-radius: 15px 0 15px 0;
+            cursor: pointer;
+        }
+        .projectDetails{
+            display:flex;
+            justify-content: space-around;
+            padding: 1rem;
+        }
+        .card{
+            width: 16rem;
+            border: 1px solid gray;
+
+        }
+        .card img{
+            width: 100%;
+        }
+        .card h3{
+            text-align: center;
+        }
+        .card p{
+            font-size: 16px;
+            padding: 10px;
+        }
+        .card a{
+            color: black;
+            font-size: 20px;
+        }
+        .icons{
+            padding: 5px 20px;
+        }
+        .card a:hover{
+            color: orange;
+        }
+        .card:hover{
+            box-shadow: 2px 2px 1px gray;
+        }
+        .technologies{
+            /* width: 400px; */
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            gap:60px
+        }
+        .techHead{
+            font-size: 28px;
+        }
+        .technologies ul{
+            margin-left: 20px;
+        }
+        #name{
+            padding: 5px;
+        }
+        #email{
+            padding: 5px;
+        }
+        #msg{
+            padding: 5px;
+        }
+        .inputClass{
+            padding: 5px;
+
+        }
+        #submitBTN{
+
+        }
+.heading{
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    font-size: 48px;
+}
+/* About Information */
+.about-info {
+    flex: 1.5;
+}
+
+.about-info h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-info h3 span {
+    color: #007bff;
+}
+
+.about-info h4 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Personal Information */
+.personal-info {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px auto;
+}
+
+.personal-info div {
+    padding: 10px 0;
+}
+
+.personal-info strong {
+    margin-right: 8px;
+    color: #333;
+}
+
+.personal-info span {
+    color: #666;
+}
+
+/* Buttons */
+.about-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    margin: 25px auto;
+    width: 40%;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.btn-outline:hover {
+    background-color: orange;
+    color: white;
+}
+
+.contactForm {
+    width: 60%;
+    margin: 10px auto;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+}
+.formControl{
+    margin-bottom: 30px;
+
+}
+.formGroup label{
+    font-size: 17px;
+}
+.formControl input{
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+.formControl input:focus{
+    border-radius: 0px;
+}
+#submitBTN{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+}
+.goToTop{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    padding: 24px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.goToTop a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.goToTop a i{
+    color: white;
+}

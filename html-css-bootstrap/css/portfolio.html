@@ -1,139 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        body{
-        }
-        .descriWithName{
-            /* border: 1px solid black; */
-            width: 60%;
-            float: left;
-        }
-        h1{
-            font-size: 3rem;
-            text-shadow: 5px 5px 4px orange, 3px 3px 6px green;
-            margin:0
-        }
-        p{
-            font-size: 1.5rem;
-            text-align: justify;
-        }
-        .imgContainer{
-            width: 40%;
-            float: right;
-            text-align: center;
-        }
-        .imgUser{
-            width: 40%;
-        }
-        .btnMoreInfo{
-            background-color: orange;
-            border: none;
-            font-size: 1.7rem;
-            color: white;
-            border-radius: 0px 15px 0px 15px;
-            padding: 10px 30px;
-        }
-        .btnMoreInfo:hover{
-            background-color: #a36a00;
-            border-radius: 15px 0 15px 0;
-            cursor: pointer;
-        }
-        .projectDetails{
-            clear: right;
-        }
-        .boxModel{
-            width: 300px;
-            height: 300px;
-            background-color: red;
-            padding: 30px 20px 10px 5px;
-            border: 5px solid pink;
-        }
-        ul{
-            margin: 0;
-            padding: 0;
-        }
-        #name{
-            padding: 5px;
-        }
-        #email{
-            padding: 5px;
-        }
-        #msg{
-            padding: 5px;
-        }
-        .inputClass{
-            padding: 5px;
-
-        }
-        #submitBTN{
-
-        }
-    </style>
+    <link rel="stylesheet" href="./portfolio.css">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
-    <header>
-    <div class="descriWithName">
-    <h1 style="text-align: center;" title="This is my name">Your Name</h1>
-    <p style="color: gray;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem sequi tempora, odit reprehenderit laboriosam voluptatum nobis quibusdam blanditiis aliquam. Dolorem est, iure odit, cum quisquam provident itaque veritatis sit nostrum necessitatibus voluptatem nulla ab animi tempore error maiores consequatur.</p>
-    <div style="text-align: center;">
-    <button class="btnMoreInfo">More Information</button>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#techs">Technologies</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div class="descriWithName">
+            <h1 style="text-align: center;" title="This is my name">Your Name</h1>
+            <p style="color: gray;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem
+                sequi tempora, odit reprehenderit laboriosam voluptatum nobis quibusdam blanditiis aliquam. Dolorem est,
+                iure odit, cum quisquam provident itaque veritatis sit nostrum necessitatibus voluptatem nulla ab animi
+                tempore error maiores consequatur.</p>
+            <div style="text-align: center;">
+                <button class="btnMoreInfo">More Information</button>
+            </div>
+        </div>
+        <div class="imgContainer">
+            <img src="./assets/userImg.png" alt="" class="imgUser">
+        </div>
+    </header>
+    <div style="clear: left;">
+        <div style="clear: right;">
+
+            <section id="projects">
+                <h2 class="heading">Projects</h2>
+                <div class="projectDetails">
+                    <div class="card">
+                        <img src="./assets/MERN.png" alt="">
+                        <h3>Project Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, pariatur...</p>
+                        <div class="icons">
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/MERN.png" alt="">
+                        <h3>Project Title Two</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, pariatur...</p>
+                        <div class="icons">
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/MERN.png" alt="">
+                        <h3>Project Title Three</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, pariatur...</p>
+                        <div class="icons">
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-square-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section id="techs">
+                <h2 class="heading">Technologies</h2>
+
+                <div class="technologies" style="padding: 30px;">
+                    <div>
+                        <h3 class="techHead">FRONTEND</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Jaavascript</li>
+                            <li>Reactjs</li>
+                        </ul>
+                        <h3 class="techHead">BACKEND</h3>
+                        <ul>
+                            <li>Nodejs</li>
+                            <li>ExpressJs</li>
+                            <li>SpringBoot</li>
+                            <li>Hobernet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="techHead">Databases</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <h3 class="techHead">LANGUAGES</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <Li>C</Li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+
+            <section id="aboutMe">
+                <h2 class="heading">About Me</h2>
+                <!-- Personal Information -->
+                <div class="personal-info">
+
+                    <div>
+                        <strong>Name:</strong>
+                        <span>John Doe</span>
+                    </div>
+
+                    <div>
+                        <strong>Email:</strong>
+                        <span>john@example.com</span>
+                    </div>
+
+                    <div>
+                        <strong>Experience:</strong>
+                        <span>5+ Years</span>
+                    </div>
+
+                    <div>
+                        <strong>Location:</strong>
+                        <span>Pune, India</span>
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="about-buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+
+                    <a href="resume.pdf" class="btn btn-outline" target="_blank">
+                        Download Resume
+                    </a>
+                </div>
+
+        </div>
+
+        </section>
+        <section id="contactMe">
+            <h2 class="heading">Contact me</h2>
+            <div class="contactForm">
+                <form action="" >
+                    <div class="formGroup">
+                        <div class="formControl">
+                            <label for="">Name:</label>
+                            <input type="text" name="" id="name" class="inputClass">
+                        </div>
+                        <div class="formControl">
+
+                            <label for="">Email:</label>
+                            <input type="text" name="" id="email" class="inputClass">
+                        </div>
+                        <div class="formControl">
+
+                            <label for="">Message :</label>
+                            <input type="text" name="" id="msg" class="inputClass">
+                        </div>
+                        <div class="formControl">
+
+                            <button id="submitBTN">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+<footer style="background-color: black;color: white;padding: 30px;text-align: center;">
+    Copyright to your name
+</footer>
+
+<div class="goToTop">
+    <a href="#home">
+    <i class="fa-solid fa-up-long"></i>
+    </a>
 </div>
-    <div class="imgContainer">
-        <img src="./assets/userImg.png" alt="" class="imgUser">
-     </div>
-</header>
-<br>
-<hr style="clear: left;">
-<div class="projectDetails">
-project details 
-title with decription
-
-</div>
- 
-
-<hr>
-<h2>
-About Me 
-</h2>
-
-<img src="./assets/userImg.png" alt="" width="300" height="300">
-<div class="boxModel"></div>
-
-
-skills ; technologies ; 
-<h2>TECHNOLOGIES</h2>
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JAVASCRIPT</li>
-    <li>PYTHON</li>
-
-</ul>
-<hr>
-<h2>
-Contact Me 
-
-</h2>
-<form action="">
-    <label for="">Name:</label>
-    <input type="text" name="" id="name" class="inputClass">
-     <label for="">Email:</label>
-    <input type="text" name="" id="email" class="inputClass">
-     <label for="">Message :</label>
-    <input type="text" name="" id="msg" class="inputClass">
-    <button id="submitBTN">Submit</button>
-</form>
-
 </body>
+
 </html>
