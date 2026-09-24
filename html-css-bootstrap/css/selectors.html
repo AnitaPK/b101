@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:pink !important;
+        }
+        #headingOne{
+            color: blue;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+        }
+        td{
+        }
+        tr td{
+            color: brown;
+        }
+        tr button{
+            background-color: green;
+        }
+        thead tr:nth-child(1){
+            background-color: pink;
+        }
+        tr:nth-child(even){
+            background-color: gray;
+        }
+        tr:hover{
+            background-color: rgb(101, 148, 143);
+        }
+        section > p{color:blueviolet}
+        div p{
+            color: yellowgreen;
+        }
+        p::first-letter{
+            font-size: 40px;
+        }
+        p::first-line{
+            color: tomato;
+        }
+        .contentBefore div::before, .contentBefore div::after{
+            content: "'";
+            font-size: 30px;
+            color: red;
+        }
+        a[href]{
+            color: red;
+        }
+        a[target]{
+            color: green;
+        }
+        a[href^="http"]{
+            color: blue;
+        }
+        a[href$=".pdf"]{
+            color: blueviolet;
+        }
+        .box{
+            width:200px;
+            height: 200px;
+        }
+        .simpleBox{
+            border: 10px ridge pink;
+        }
+        .boxWithBgImg{
+            background-image: url('./assets/nature.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .linearGrad{
+            background-image: linear-gradient(to right bottom, yellow ,red,yellow);
+        }
+        .radialGrad{
+            background-image: radial-gradient(pink,yellow, black);
+        }
+        .conicGrad{
+            background-image: conic-gradient(black,red,white);
+        }
+    </style>
+</head>
+<body>
+    <div class="box simpleBox"></div>
+    <div class="box boxWithBgImg"></div>
+    <div class="box linearGrad"></div>
+    <div class="box radialGrad"></div>
+    <div class="box conicGrad"></div>
+
+    <a href="#">Link</a>
+    <a href="./layout.html">Link relative</a>
+    <a href="https://www.google.com">Link with absolute</a>
+    <a href="http:/wisdomsprouts.in/folder/course.pdf">Link of pdf</a>
+    <a target="_blank">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+
+    <div class="contentBefore">
+    <div>wertyuiop</div>
+    <div>wertyuiop</div>
+    <div>wertyuiop</div>
+    <div>wertyuiop</div>
+    <div>wertyuiop</div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum illo hic quas error autem nisi ad blanditiis sapiente, minima adipisci expedita perspiciatis, aliquam maxime aperiam natus explicabo. Obcaecati, odio adipisci?</p>
+<section>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, quis.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, culpa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, quis.</p>
+        
+        </div>
+    </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, quis.</p>
+
+</section>
+    <h1 style="color:red">Lorem ipsum dolor sit amet consectetur.</h1>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h1 id="headingOne">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+     <h1>Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th colspan="2">Student's Name</th>
+                <!-- <th>Student Last Name</th> -->
+                <th>Contact Number</th>
+                <th>Email Address</th>
+                <th>Photo</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >001</td>
+                <td >Aamir</td>
+                <td >Khan</td>
+                <td>9876543212</td>
+                <td >aamir@gmail.com</td>
+                <td><img src="./assets/smiley.jpeg" alt="" width="30" height="30"></td>
+                <td><button>Result</button></td>
+            </tr>
+           
+            <tr>
+                <td>002</td>
+                <td>Salman</td>
+                <td>Khan</td>
+                <td>9876543212</td>
+                <td>salman@gmail.com</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Dipika</td>
+                <td>Padukon</td>
+                <td>9876543212</td>
+                <td>aamir@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
