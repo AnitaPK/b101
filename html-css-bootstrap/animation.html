@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .transOne:hover{
+            transform:translate(100px, 100px)
+        }
+        .rotateOne:hover{
+            transform:rotateX(60deg)
+        }
+        .skewOne:hover{
+            transform:skew(45deg, 60deg)
+        }
+        .scaleOne:hover{
+            transform:scale(0.5,0.5)
+        }
+        .transitionOne{
+            transition: background-color 5s, transform 3s, color 5s, border-radius 3s
+        }
+        .transitionOne:hover{
+            background-color: blue;
+            /* transform:translate(200px,200px); */
+            color:white;
+            border-radius: 50%;
+        }
+        .animationOne{
+            animation-name: animaxOne;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animaxOne{
+            from{
+                background-color: brown;
+            }
+            to{
+                background-color: green;
+            }
+        }
+        .animationTwo{
+            animation: animaxTwo 5s 3s infinite
+        }
+        @keyframes animaxTwo{
+            0%{
+                background-color: aqua;
+            }
+            25%{
+                background-color: bisque;
+                transform: translateX(200px);
+            }
+            30%{
+                transform: rotate(60deg);
+            }
+            50%{
+                background-color: aqua;
+                transform: rotate(-60deg);
+            }
+            75%{
+                background-color: bisque;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        .heartBlink{
+            height: 70px;
+        }
+        .heartBlink i{
+            color: red;
+            font-size: 40px;
+            
+            animation :animaxHeart 1s infinite
+        }
+        @keyframes animaxHeart{
+            0%{font-size: 40px;}
+            50%{font-size: 5px;padding-left: 30px;padding-top: 30px;}
+            100%{font-size: 40px;}
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <div class="heartBlink">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="box animationTwo"></div>
+
+    <div class="box animationOne">ANIMATION</div>
+
+    <div class="box transitionOne">CSS</div>
+
+    <div class="box"></div>
+    <div class="box transOne"></div>
+    <div class="box rotateOne"></div>
+    <div class="box skewOne"></div>
+    <div class="box scaleOne"></div>
+
+</body>
+</html>
