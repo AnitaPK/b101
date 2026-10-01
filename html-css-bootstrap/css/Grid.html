@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .layout{
+            /* width: 700px; */
+            /* height: 700px; */
+            display: grid;
+            grid-template-areas: 'nav nav nav nav nav'
+                        'asd main main main main'
+                        'asd c1 c1 c2 c2'
+                        'foo foo foo foo foo ';
+        }
+        .navbar{
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            grid-area: nav;
+        }
+        .asideBar{
+            background-color: gray;
+            height: 85vh;
+            grid-area: asd;
+        }
+        .mainContent{
+            background-color: rgb(216, 216, 216);
+            height: 300px;
+            grid-area: main;
+        }
+        .contentOne{
+            border: 1px solid black;
+            height: 200px;
+            grid-area: c1;
+        }
+        .contentTwo{
+            border: 1px solid black;
+            height: 200px;
+            grid-area: c2;
+
+        }
+        .footer{
+            background-color: black;
+            height: 50px;
+            grid-area: foo;
+        }
+        .empCards{
+            display: grid;
+            /* justify-content: center; */
+            align-content: center;
+            justify-items: center;   
+            /* align-items: center; */
+            grid-template-columns: repeat(3, 1fr);
+            gap:10px;
+        }
+        .card{
+            width: 16rem;
+            height: 300px;
+            background-image: linear-gradient(purple,red);
+        }
+        .fruitContainer{
+            display: grid;
+            width: 600px;
+            height: 600px;
+        }
+        .grapes{
+            background-color: purple;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 150px;
+            height: 100px;
+        }
+        .strawberry{
+            background-color: rgb(208, 69, 92);
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+          width: 150px;
+            height: 100px;
+        }
+        .watermelon{
+            background-color: red;
+             grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 300px;
+            height: 350px;
+        }
+        .orange{
+            background-color: orange;
+             grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 300px;
+            height: 250px;
+        }
+        .papaya{
+            background-color: yellow;
+             grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 300px;
+            height: 300px;
+        }
+        .pineapple{
+            background-color: rgb(126, 69, 69);
+             grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            width: 300px;
+            height: 300px;
+        }
+        @media screen and (max-width:600px) {
+                .layout{
+                    grid-template-areas:'nav'
+                                        'asd'
+                                        'main'
+                                        'c1'
+                                        'c2'
+                                        'foo'
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fruitContainer">
+        <div class="grapes"></div>
+        <div class="strawberry"></div>
+        <div class="watermelon"></div>
+        <div class="orange"></div>
+        <div class="papaya"></div>
+        <div class="pineapple"></div>
+    </div>
+    <div class="empCards">
+        <div class="card"><h5>EMPLOYEE ONE</h5></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+<!-- show cards at center  -->
+    </div>
+    <div class="layout">
+        <div class="navbar"></div>
+        <div class="asideBar"></div>
+        <div class="mainContent"></div>
+        <div class="contentOne"></div>
+        <div class="contentTwo"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
