@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="headingOne" class="">Happy to Learn JAVASCRIPT</h1>
+
+    <button onclick="changeHeading()">Click me to change heading</button>
+    <button onclick="allDisappear()">All Remove</button>
+    <script>
+        console.log("Hello World")
+        // alert("Hello from alert")
+        headingElmt = document.getElementById("headingOne")
+        // headingElmt.textContent = "Javascript is EASY"
+
+        function changeHeading(){
+            document.getElementById('headingOne').textContent = 'Javascript is EASY'
+        }
+        function allDisappear(){
+        document.write("I am showing from document.write method")
+        }
+    </script>
+    <script src="./firstScript.js"></script>
+
+
+    <input type="text" id="nameStudent" value="John">
+    <button onclick="getStudName()">Get student name</button>
+    <script>
+        function getStudName(){
+            nameS = document.getElementById("nameStudent").value
+            console.log(nameS)
+        }
+       NameFromPrompt= prompt("Enter name")
+       console.log(NameFromPrompt)
+    </script>
+</body>
+</html>

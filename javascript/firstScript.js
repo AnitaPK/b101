@@ -1,0 +1,6 @@
+console.log("Hello from js file")
+console.log("I am learning Javascript")
+console.log(2+6) 
+// alert("This is from js file")
+pName = prompt("Enter name")
+console.log(pName)
