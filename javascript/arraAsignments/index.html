@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+    <h1>1. To Do Manager </h1>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="inputTask" >
+        <button id="addTask" onclick="addNewTask()">Add New Task</button>
+        <button id="ClearAllTasks">Clear All</button>
+  </div>
+  <ol id="renderTasks"></ol>
+</div>
+<hr>
+<hr>
+<hr>
+<div class="container">
+    <h1>2. Student Marks Calulator</h1>
+     <div class="mb-3">
+        <input type="number" class="form-control" id="inputMarks" >
+        <button id="addTask" onclick="addNewMarks()">Add New Marks</button>
+        <button onclick="calculate()">Calculate</button>
+       
+        <button onclick="resetMarks()">Reset</button>
+  </div>
+  <div id="marksRender"></div>
+</div>
+
+<div class="container">
+  <h1>3. Search in Array</h1>
+</div>
+
+
+
+ <div class="container my-5">
+        
+
+                <h1 class="mb-2">
+                    4. Even and Odd Number Filter
+                </h1>
+                <!-- Input Section -->
+                <div class="input-group mb-3">
+                    <input type="number" id="numberInput" class="form-control" placeholder="Enter a whole number" step="1" >
+
+                    <button class="btn btn-primary"onclick="addNumber()" >Add Number </button>
+                </div>
+                <p id="message" class="text-danger"></p>
+                <!-- Action Buttons -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button
+                        class="btn btn-success" onclick="showEven()">Show Even</button>
+                    <button class="btn btn-warning" onclick="showOdd()" > Show Odd </button>
+                    <button class="btn btn-danger"  onclick="clearAll()"  >Clear </button>
+                </div>
+
+                <!-- Original Array -->
+                <div class="card border-primary mb-4">
+                    <div class="card-header bg-primary text-white">
+                        Original Array
+                    </div>
+
+                    <div class="card-body" id="originalArray">
+                        <span class="text-muted">
+                            No numbers added yet.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Even and Odd Arrays -->
+                <div class="row g-3">
+
+                    <!-- Even Numbers -->
+                    <div class="col-md-6">
+                        <div class="card border-success h-100">
+                            <div class="card-header bg-success text-white">
+                                Even Numbers
+                            </div>
+
+                            <div class="card-body" id="evenArray">
+                                <span class="text-muted">
+                                    Click Show Even.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Odd Numbers -->
+                    <div class="col-md-6">
+                        <div class="card border-warning h-100">
+                            <div class="card-header bg-warning text-dark">
+                                Odd Numbers
+                            </div>
+
+                            <div class="card-body" id="oddArray">
+                                <span class="text-muted">
+                                    Click Show Odd.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            
+    </div>
+
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
