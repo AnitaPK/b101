@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .imgDemo{
+        width:300px;
+        height: 300px;
+      }
+    </style>
+</head>
+<body>
+    <h1>
+        A Heading
+    </h1>
+    <a href="http://www.google.com">GOOGLE</a>
+
+    <pre>
+        getElementById() 
+        getElementsByTagName().   => 
+        getElementsByClassName()
+
+        querySelector("h2") 
+        querySelectorAll(".Demo")   => ARRAY
+    </pre>
+
+    <div class="demo" id="divDemoID"></div>
+
+    <div class="uniqueClassDemo demo"></div>
+    <p class="demo" id="paraDemo"></p>
+    <h3 class="demo headingDemo"></h3>
+
+    <p id="paraDemoOne">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, provident.</p>
+
+    <button onclick="changeContentPARA()">Change Content</button>
+
+
+
+    <script>
+        function changeContentPARA(){
+            document.querySelector("#paraDemoOne").innerHTML = "HELLOOOOOOO"
+        }
+    </script>
+
+    <img src="../offBulb.jpeg" alt="" id="imgToggle" class="imgDemo">
+    <button id="onOffBTN">On / OFF</button>
+
+    <script>
+          const imgELMT = document.querySelector("#imgToggle")
+
+      document.querySelector("#onOffBTN").addEventListener('click', ()=>{
+          srcIMG = imgELMT.getAttribute("src")
+          if(srcIMG == '../offBulb.jpeg'){
+            imgELMT.setAttribute("src", "../onBulb.jpeg")
+          }else{
+            imgELMT.setAttribute("src", "../offBulb.jpeg")
+          }
+      })
+
+      imgELMT.addEventListener('mouseover',()=>{
+        document.body.style.backgroundColor = "#0a0a0a"
+      })
+      imgELMT.addEventListener("mouseout",()=>{
+        document.body.style.backgroundColor = "#ffffff"
+
+      })
+    </script>
+
+    
+
+</body>
+</html>
