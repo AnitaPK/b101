@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: blue;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <input type="number" id="countInput">
+    <h1 id="count">0</h1>
+    <button onclick="countDown()">Start Count Down</button>
+
+</div>
+
+<script>
+    function countDown(){
+
+        remTiming = Number(document.querySelector("#countInput").value)
+
+        document.querySelector("#count").textContent = remTiming 
+
+        timer = setInterval(()=>{
+            remTiming--
+            document.querySelector("#count").textContent = remTiming 
+
+            if(remTiming < 0){
+                clearInterval(timer)
+                alert("Times Up")
+            }
+        },1000)
+
+    }
+</script>
+
+</body>
+
+</html>
