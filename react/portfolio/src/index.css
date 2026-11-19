@@ -7,4 +7,24 @@
   font-size: 28px;
   font-weight: 700;
   background-color: rgb(255, 250, 244);
+  padding: 30px;
+}
+
+.customIcon:link{
+  color: rgb(255, 132, 0);
+  font-size: 24px;
+  padding-right: 20px;
+} 
+.customIcon:active{
+
+}
+.customIcon:hover{
+  color: rgb(147, 77, 3);
+}
+.customIcon:visited{
+  color: rgb(255, 132, 0);
+
+}
+.customProjectName{
+  font-size: 18px!important;
 }

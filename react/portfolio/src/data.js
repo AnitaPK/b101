@@ -37,10 +37,10 @@ export const projectsList = [
         category: "MERN Stack",
         shortDescription:
             "A role-based LMS platform for managing courses, instructors, students and online learning.",
-        image: "/images/lms.png",
+        image: "https://clickmyproject.com/wp-content/uploads/2025/12/MERN-stack-Project.jpg",
         technologies: ["React", "Node.js", "Express.js", "MongoDB"],
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Gauravdkaware/MERN",
         featured: true
     },
     {
@@ -49,10 +49,10 @@ export const projectsList = [
         category: "Full Stack Development",
         shortDescription:
             "An interactive dashboard displaying country-wise population statistics and analytics.",
-        image: "/images/world-dashboard.png",
+        image: "https://cdn.dribbble.com/userupload/41787647/file/original-5f844361557f61635b9dfdb47375c0d7.png",
         technologies: ["React", "Node.js", "Express.js", "MySQL", "Recharts"],
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Gauravdkaware/MERN",
         featured: true
     },
     {
@@ -61,10 +61,10 @@ export const projectsList = [
         category: "Full Stack Development",
         shortDescription:
             "An online coding platform where users can write, execute and test programming solutions.",
-        image: "/images/code-judge.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHA6tsOWGMFyhxAqrXCJ9T42PD-HKIxjWw7yur-jaMA&s=10",
         technologies: ["React", "Node.js", "Python", "Docker"],
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Gauravdkaware/MERN/blob/feature/practice/practice-application/weather-application/script.js",
         featured: true
     },
     {
@@ -73,10 +73,10 @@ export const projectsList = [
         category: "Full Stack Development",
         shortDescription:
             "A task management application for organizing projects, assigning tasks and tracking progress.",
-        image: "/images/task-management.png",
+        image: "https://cdn.dribbble.com/userupload/28043161/file/original-450e9df2239ac18cb25228153b5b01ef.png",
         technologies: ["React", "Node.js", "Express.js", "MySQL", "Sequelize"],
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Gauravdkaware/MERN/blob/feature/practice/practice-application/weather-application/script.js",
         featured: false
     },
     {
@@ -85,10 +85,10 @@ export const projectsList = [
         category: "Frontend Development",
         shortDescription:
             "A weather application that displays real-time weather information using an external API.",
-        image: "/images/weather-app.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyulv7ZayDVoRMRdr5VC0sbP-1WlS9MqC2Y0DpIufJng&s",
         technologies: ["HTML", "CSS", "JavaScript", "Weather API"],
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Gauravdkaware/MERN/blob/feature/practice/practice-application/weather-application/script.js",
         featured: false
     },
     {
@@ -97,10 +97,10 @@ export const projectsList = [
         category: "Frontend Development",
         shortDescription:
             "A recipe discovery application with search, filtering, sorting and recipe details.",
-        image: "/images/recipe-app.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_DmuK32AOYnVrtrGxyE6INDcTb8NN3wzmV7dLXFnxmg&s=10",
         technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "API"],
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/Gauravdkaware/MERN/blob/feature/practice/practice-application/weather-application/script.js",
         featured: false
     }
 ];
