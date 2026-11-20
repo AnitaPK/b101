@@ -210,6 +210,72 @@ export const projectsDetails = [
 
         githubLink: "",
         liveLink: ""
+    },
+    {
+        projectId: 4,
+        title: "Online Code Judge",
+        overview:
+            "An online coding environment that allows users to write and execute programs in multiple programming languages.",
+
+        features: [
+            "Online code editor",
+            "Monaco Editor integration",
+            "Code execution",
+            "Python and JavaScript support",
+            "Execution output",
+            "Docker-based execution environment"
+        ],
+
+        challenges:
+            "Creating an isolated code execution environment and managing secure execution workflows.",
+
+        role: "Full Stack Developer",
+
+        technologies: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Python",
+            "JavaScript",
+            "Docker",
+            "Monaco Editor"
+        ],
+
+        githubLink: "",
+        liveLink: ""
+    },
+    {
+        projectId: 5,
+        title: "Online Code Judge",
+        overview:
+            "An online coding environment that allows users to write and execute programs in multiple programming languages.",
+
+        features: [
+            "Online code editor",
+            "Monaco Editor integration",
+            "Code execution",
+            "Python and JavaScript support",
+            "Execution output",
+            "Docker-based execution environment"
+        ],
+
+        challenges:
+            "Creating an isolated code execution environment and managing secure execution workflows.",
+
+        role: "Full Stack Developer",
+
+        technologies: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Python",
+            "JavaScript",
+            "Docker",
+            "Monaco Editor"
+        ],
+
+        githubLink: "",
+        liveLink: ""
     }
 ];
 

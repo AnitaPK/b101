@@ -1,0 +1,144 @@
+
+.skills-section {
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.section-subtitle {
+    color: #6366f1;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #172033;
+}
+
+.section-title span {
+    color: #6366f1;
+}
+
+.section-description {
+    max-width: 550px;
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Skill Card */
+
+.skill-card {
+    background: #ffffff;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    border-color: #a5b4fc;
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.10);
+}
+
+/* Category Icon */
+
+.skill-category-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    color: #6366f1;
+    font-size: 23px;
+    border-radius: 12px;
+}
+
+.skill-category-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Individual Skill */
+
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 9px 11px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    transition: all 0.25s ease;
+}
+
+.skill-item:hover {
+    background: #eef2ff;
+    border-color: #c7d2fe;
+}
+
+.skill-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.skill-level {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 6px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Proficiency Levels */
+
+.level-advanced {
+    color: #047857;
+    background: #d1fae5;
+}
+
+.level-intermediate {
+    color: #1d4ed8;
+    background: #dbeafe;
+}
+
+.level-beginner {
+    color: #b45309;
+    background: #fef3c7;
+}
+
+.level-default {
+    color: #475569;
+    background: #e2e8f0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .skill-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 27px;
+    }
+
+    .skill-category-title {
+        font-size: 17px;
+    }
+}

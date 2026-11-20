@@ -35,7 +35,7 @@ const Skills = ({ skills = [] }) => {
     };
 
     return (
-        <section className="skills-section py-5" id="skills">
+        <section className="skills-section py-5" id="skills"  style={{height:"85vh"}}>
             <div className="container">
 
                 {/* Section Heading */}

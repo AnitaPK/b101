@@ -12,7 +12,7 @@ import "./Certificates.css";
 const Certificates = ({ data = [] }) => {
 
     return (
-        <section className="certificates-section py-5" id="certificates">
+        <section className="certificates-section py-5" id="certificates"  style={{height:"85vh"}}>
 
             <div className="container">
 
